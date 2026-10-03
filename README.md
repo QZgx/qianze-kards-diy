@@ -4,7 +4,7 @@
 
 ## 使用入口
 
-- 网站：发布成功后补充正式地址。
+- 网站：[浅泽 KARDS DIY](https://qianze-kards-diy.cengyufeng654.chatgpt.site)。
 - Android 和 Windows：安装包在 [GitHub Releases](https://github.com/QZgx/qianze-kards-diy/releases) 发布。
 - 项目仓库：[QZgx/qianze-kards-diy](https://github.com/QZgx/qianze-kards-diy)。
 
@@ -32,3 +32,8 @@
 ## 署名
 
 使用授权范围内的内容时，可采用：浅泽，浅泽 KARDS DIY，来源 https://github.com/QZgx/qianze-kards-diy ，CC BY-NC-SA 4.0；如作修改，请同时说明。
+
+
+## 源码与构建
+
+本次修改的源码和公共运行资源见 Releases 中 `qianze-kards-diy-source-1.0.1.zip`，构建方法见包内 BUILDING.md。原软件仅有现存编译资源，不宣称可从原始源码重建 Android APK。
