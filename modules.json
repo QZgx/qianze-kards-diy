@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "project": "浅泽 KARDS DIY",
+  "repository": "https://github.com/QZgx/qianze-kards-diy",
+  "licensing": {
+    "licensor": "浅泽",
+    "license": "CC-BY-NC-SA-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "scope": "Only original contributions that Qianze owns or is entitled to license.",
+    "wholeBundleRelicensed": false,
+    "defaultForThirdPartyOrUnknown": "excluded"
+  },
+  "modules": [
+    {
+      "id": "common",
+      "name": "原有制卡工具",
+      "author": "原 kardsdiy 作者及相应权利人",
+      "qianzeLicenseApplies": false,
+      "policy": "Original software retains its existing rights and licenses."
+    },
+    {
+      "id": "steel",
+      "name": "铸钢——来自BigC",
+      "author": "BigC",
+      "qianzeLicenseApplies": false,
+      "access": "key-required-on-web-and-software",
+      "policy": "All BigC works and Steel frame layers are excluded. Unlocking does not grant redistribution rights."
+    },
+    {
+      "id": "azur",
+      "name": "碧蓝航线——来自浅泽",
+      "author": "浅泽",
+      "qianzeLicenseApplies": "original-contributions-only",
+      "license": "CC-BY-NC-SA-4.0",
+      "exclusions": [
+        "official game artwork",
+        "characters",
+        "AZUR LANE mark",
+        "faction emblems",
+        "third-party fonts",
+        "original software and dependencies"
+      ]
+    }
+  ],
+  "futureModulePolicy": {
+    "nonQianzeAuthors": "excluded-from-qianze-license",
+    "requiredMetadata": [
+      "author",
+      "source",
+      "rightsHolderLicense",
+      "thirdPartyExclusions"
+    ],
+    "unknownRights": "excluded"
+  },
+  "excludedCategories": [
+    "Steel and BigC works",
+    "present and future non-Qianze author works",
+    "original kardsdiy software",
+    "third-party libraries and runtimes",
+    "fonts",
+    "official game assets and trademarks",
+    "user uploads",
+    "secrets and signing credentials"
+  ]
+}
