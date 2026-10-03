@@ -1,0 +1,48 @@
+{
+  "name": "kards-qianze-diy",
+  "version": "1.0.1",
+  "description": "KARDS 制卡工具（浅泽改）Windows 桌面版",
+  "author": "浅泽",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "private": true,
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check local-server.cjs && node scripts/preflight.cjs",
+    "build:win": "npm run check && electron-builder --win nsis --x64 --publish never"
+  },
+  "devDependencies": {
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "cn.qianze.kards.diy",
+    "productName": "KARDS 制卡（浅泽改）",
+    "executableName": "KardsQianzeDIY",
+    "asar": true,
+    "compression": "maximum",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.cjs", "preload.cjs", "local-server.cjs", "package.json", "web/**/*", "LICENSE.md", "NOTICE.md"],
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "artifactName": "KARDS-DIY-Qianze-Setup-${version}-${arch}.${ext}",
+      "requestedExecutionLevel": "asInvoker",
+      "signExecutable": false,
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "KARDS 制卡（浅泽改）",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": false,
+      "installerLanguages": ["zh_CN", "en_US"],
+      "displayLanguageSelector": false,
+      "license": "LICENSE.md"
+    }
+  }
+}
