@@ -4,7 +4,7 @@
 
 ## Windows
 
-安装 Node.js 24。在 desktop-app 内执行 npm ci，然后 npm run dist。web 目录为已同步网页资源；安装器输出到 dist。需自行配置 Authenticode 证书才能签名 Windows 程序。
+安装 Node.js 24。在 desktop-app 内执行 npm ci，将 public-site/public 复制到 desktop-app/web，然后 npm run build:win。安装器输出到 dist。需自行配置 Authenticode 证书才能签名 Windows 程序。
 
 ## 网站
 
